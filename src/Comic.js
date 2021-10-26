@@ -17,7 +17,7 @@ const GetComic = () => {
 
     React.useEffect(() => {
 
-        // Get the most recent comic strip data for the landing page
+        // Case 1. Get the most recent comic strip data for the landing page
         if (id == null) {
             axios.get(`https://xkcd.com/info.0.json`)
                 .then((res) => {
@@ -28,7 +28,9 @@ const GetComic = () => {
                     setCurrentComicNum(newComic.num);
                     setViewed(viewed + 1);
                 });
-        } else {
+        }
+        // Case 2. Get the specific comic strip data
+        else {
             // Check the most recent comic's number (for creating random number)
             axios.get(`https://xkcd.com/info.0.json`)
                 .then((res) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function NotFound() {
 
@@ -21,10 +21,8 @@ function NotFound() {
             <button id="Button-random" onClick={(event) => {
                 goRandom(event);
             }}> Show Me Random </button>
-
         </div>
     )
-
 }
 
 export default NotFound;
