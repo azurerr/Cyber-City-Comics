@@ -48,7 +48,7 @@ const GetComic = () => {
                         setNextDisabled(false);
                     }
                     // Disable 'Prev Button' in the 1st comic page
-                    if (id === 1) {
+                    if (id == 1) {
                         setNextDisabled(false);
                         setPrevDisabled(true);
                     }
