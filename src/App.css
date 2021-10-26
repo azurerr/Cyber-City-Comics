@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+  max-width: 1024px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cornflowerblue;
+  background: linear-gradient(90deg, rgb(78, 121, 240), rgb(184, 206, 240));
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+
+.App-header {
+  background-color: #282c34;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  border: 2px solid lavender;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: white;
+  font-family: 'BioRhyme', serif;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.div {
+  overflow-x:auto
+}
+
+.Th-left {
+  text-align: left;
+  vertical-align: middle;
+  padding: 1vh;
+  width: 60vh;
+}
+
+.Th-right {
+  text-align: right;
+  vertical-align: middle;
+  padding: 1vh;
+  width: 40vh;
+}
+
+.Td-center {
+  text-align: center;
+  vertical-align:top;
+  padding: 1vh;
+  width: 60vh;
+}
+
+.Td-left {
+  text-align: left;
+  vertical-align: middle;
+  padding: 1vh;
+  width: 40vh;
+}
+
+
+
+img {
+  width: auto;
+  height: auto;
+}
+
+button {
+  margin: 1vh;
+  padding: 1vh;
+  border-color: #61dafb;
+  border-radius: 6px;
+  background-color: #565d6b;
+  color: white;
+}
+
+button[disabled]{
+  background-color: #cccccc;
+}
+
+#Button-go {
+margin-left: 3px;
+vertical-align: middle;
+}
+
+#Button-random {
+  background-color: #282c34;
+  margin-top: 0;
+}
+
+.Input {
+  width: 50px;
+  margin: 2vh;
+  margin-right: 0;
+  padding: 1vh;
+  border-color: #61dafb;
+  border-radius: 8px;
+  color: #282c34;
+}
+
+.App-footer {
+  min-height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 1vmin);
+  padding: 10px;
+  margin-top: 2vh;
+  background-color: #282c34;
+  border: 2px solid lavender;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  display: flex;
+  color: rgb(160, 181, 241);
+
+}
