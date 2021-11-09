@@ -16,6 +16,9 @@
     "web-vitals": "^1.1.2"
   },
   "proxy": "https://xkcd.com",
+  "devServer": {
+    "disableHostCheck": true
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
