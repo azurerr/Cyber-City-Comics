@@ -19,7 +19,7 @@ const GetComic = () => {
 
         // Case 1. Get the most recent comic strip data for the landing page
         if (id == null) {
-            axios.get(`https://xkcd.com/info.0.json`)
+            axios.get(`/info.0.json`)
                 .then((res) => {
                     let newComic = res.data;
                     setComic(newComic);
@@ -32,13 +32,13 @@ const GetComic = () => {
         // Case 2. Get the specific comic strip data
         else {
             // Check the most recent comic's number (for creating random number)
-            axios.get(`https://xkcd.com/info.0.json`)
+            axios.get(`/info.0.json`)
                 .then((res) => {
                     let newComic = res.data;
                     setMostRecent(newComic.num);
                 });
             // Get the specific number's comic strip data
-            axios.get(`https://xkcd.com/${id}/info.0.json`)
+            axios.get(`/${id}/info.0.json`)
                 .then((res) => {
                     let newComic = res.data;
                     setComic(newComic);
